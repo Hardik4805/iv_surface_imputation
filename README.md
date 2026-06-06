@@ -10,11 +10,11 @@ To solve this, this pipeline implements a hybrid approach:
 2. **Temporal Smoothing:** Applies Savitzky-Golay filtering to preserve the dynamic properties of the volatility surface while filtering out high-frequency noise. 
 
 ## File Structure
-- `run_pipeline38.py`: The core imputation engine combining Akima 1D interpolation, PCA ensembles, and Savitzky-Golay smoothing.
+- `run_pipeline.py`: The core imputation engine combining Akima 1D interpolation, PCA ensembles, and Savitzky-Golay smoothing.
 
 ## Usage
 Simply run the python script. Ensure `dataset.csv` is present in the working directory.
 ```bash
-python run_pipeline38.py
+python run_pipeline.py
 ```
 The script will output `submission.csv` containing the final imputed values.
